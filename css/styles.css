@@ -1,0 +1,496 @@
+/* ============================================
+   EL CENTOLLO - RESTAURANTE DE MARISCOS
+   Estilos según imágenes del parcial
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* ============================================
+   HEADER: Logo + Menú negro centrado
+   ============================================ */
+.logo-container {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    background: #ffffff;
+}
+
+.logo-container img {
+    height: 100px;
+}
+
+.navbar {
+    background: #1a1a1a;
+    text-align: center;
+}
+
+.nav-menu {
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav-menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 35px;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    background: #333333;
+}
+
+/* ============================================
+   SLIDER: Centollo con info + puntos
+   ============================================ */
+.slider-section {
+    padding: 30px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.slider-main {
+    display: flex;
+    gap: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.slide-image {
+    flex: 0 0 45%;
+    position: relative;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #333333;
+}
+
+.slide-info {
+    flex: 1;
+    padding: 25px;
+    background: #faf8f5;
+}
+
+.slide-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.slide-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.slide-info .nombre-cientifico {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 15px 0;
+}
+
+.slide-info .datos {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* ============================================
+   MENÚ: 10 platos en tarjetas horizontales
+   ============================================ */
+.menu-section {
+    padding: 20px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: flex;
+    gap: 20px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.menu-img {
+    flex: 0 0 150px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-content {
+    flex: 1;
+}
+
+.menu-content h3 {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-content h3 i {
+    color: #999;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu-meta {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.menu-meta .mini-avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.menu-desc {
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.menu-author {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* ============================================
+   CONTACTO: Caja beige + columnas + Forms
+   ============================================ */
+.contacto-section {
+    padding: 30px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contacto-box {
+    background: #f5f0e1;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto-box h2 {
+    font-size: 1.6rem;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 0 20px;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.contacto-box p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.contacto-datos {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.contacto-col {
+    flex: 1;
+}
+
+.contacto-col h3 {
+    font-size: 1.1rem;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.contacto-col p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.contacto-col a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contacto-col a:hover {
+    text-decoration: underline;
+}
+
+.google-form-box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.form-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-header img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.form-header h3 {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-header p {
+    font-size: 0.8rem;
+    color: #999;
+    text-align: left;
+}
+
+/* ============================================
+   UBICACIÓN
+   ============================================ */
+.ubicacion-section {
+    padding: 30px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mapa-container {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.mapa-container iframe {
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+/* ============================================
+   RESERVAS
+   ============================================ */
+.reservas-section {
+    padding: 30px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservas-text {
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.reservas-link {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reservas-link a {
+    color: #2196F3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.reservas-link a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   PIE DE PÁGINA: Barra negra + Barra blanca
+   ============================================ */
+.footer-top {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 5%;
+    flex-wrap: wrap;
+}
+
+.footer-icon-box {
+    text-align: center;
+    color: #4CAF50;
+    max-width: 180px;
+}
+
+.footer-icon-box i {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-icon-box h4 {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.footer-icon-box p {
+    font-size: 0.7rem;
+    color: #aaaaaa;
+    line-height: 1.4;
+}
+
+.footer-bottom {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-info p {
+    color: #4CAF50;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.footer-info p i {
+    margin-right: 8px;
+    width: 16px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-social .fb { background: #3b5998; }
+.footer-social .tw { background: #1da1f2; }
+.footer-social .wa { background: #25d366; }
+.footer-social .tg { background: #0088cc; }
+.footer-social .plus { background: #4285f4; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .slider-main {
+        flex-direction: column;
+    }
+    
+    .slide-image {
+        flex: none;
+        height: 250px;
+    }
+    
+    .menu-item {
+        flex-direction: column;
+    }
+    
+    .menu-img {
+        flex: none;
+        width: 100%;
+        height: 180px;
+    }
+    
+    .contacto-datos {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-top {
+        gap: 20px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
